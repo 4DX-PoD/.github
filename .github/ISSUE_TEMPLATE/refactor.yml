@@ -1,0 +1,32 @@
+name: "🛠️ Refactoring"
+description: "버그 수정 후 코드 개선 및 리팩터링 작업 제안"
+labels: ["refactoring"]
+body:
+  - type: textarea
+    attributes:
+      label: "📄 리팩터링 목적"
+      description: "왜 리팩터링이 필요한지 간단히 설명해 주세요."
+      placeholder: "예: 결제 로직의 중복 코드 제거로 유지보수성 향상"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "✅ 작업 내용"
+      description: "구체적으로 할 일을 체크박스 형태로 작성해 주세요."
+      placeholder: "- [ ] 중복 결제 검증 로직을 유틸 클래스로 분리\n- [ ] 주석 추가"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "🌟 기대 효과"
+      description: "리팩터링 후 어떤 개선이 있을지 적어 주세요."
+      placeholder: "예: 코드 가독성 향상, 실행 속도 10% 개선 예상"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "🙋🏻 참고 자료"
+      description: "관련 문서, 코드 리뷰 링크 등이 있다면 작성해 주세요."
+      placeholder: "예: 기존 PR #123 링크"
+    validations:
+      required: false
