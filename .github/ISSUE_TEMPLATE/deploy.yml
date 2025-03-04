@@ -1,0 +1,18 @@
+name: "🚀 Deployment"
+description: "새로운 버전 배포를 위한 작업 제안"
+labels: ["deployment"]
+body:
+  - type: textarea
+    attributes:
+      label: "📄 배포 개요"
+      description: "이번 배포의 목적이나 내용을 간단히 설명해 주세요."
+      placeholder: "예: 결제 서비스 v1.1.0 배포 - 새로운 결제 API 추가"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "🔗 연관된 이슈"
+      description: "이 배포와 관련된 기능, 버그, 리팩터링 이슈 번호를 적어 주세요."
+      placeholder: "예: #42, #15"
+    validations:
+      required: false
